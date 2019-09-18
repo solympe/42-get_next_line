@@ -6,7 +6,7 @@
 /*   By: solympe <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/17 14:27:09 by solympe           #+#    #+#             */
-/*   Updated: 2019/09/17 16:57:37 by solympe          ###   ########.fr       */
+/*   Updated: 2019/09/18 16:25:28 by solympe          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,12 +16,16 @@ int main()
 {
 	int		fd;
 	char	*line[4000];
+	int		i;
 
 	fd = open("text", O_RDONLY);
-	get_next_line(fd,line);
+	i = get_next_line(fd,line);
+	printf("%d\n", i);
 	printf("%s\n", "--------------------------------------------------");
-	get_next_line(fd,line);
+	i = get_next_line(fd,line);
+	printf("%d\n", i);
 	printf("%s\n", "--------------------------------------------------");
-	get_next_line(fd,line);
+	i = get_next_line(fd,line);
+	printf("%d\n", i);
 	return (0);
 }

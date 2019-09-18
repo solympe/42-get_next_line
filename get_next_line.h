@@ -6,7 +6,7 @@
 /*   By: solympe <solympe@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/17 13:20:58 by solympe           #+#    #+#             */
-/*   Updated: 2019/09/17 15:41:31 by solympe          ###   ########.fr       */
+/*   Updated: 2019/09/18 16:51:26 by solympe          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #ifndef GET_NEXT_LINE_H
@@ -21,6 +21,6 @@
 
 int		get_next_line(const int fd, char **line);
 
-# define BUFF_SIZE 4096
+# define BUFF_SIZE 4095
 
 #endif
