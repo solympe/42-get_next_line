@@ -6,16 +6,16 @@
 /*   By: solympe <solympe@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/17 12:39:28 by solympe           #+#    #+#             */
-/*   Updated: 2019/09/18 16:24:22 by solympe          ###   ########.fr       */
+/*   Updated: 2019/09/18 17:21:44 by solympe          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "get_next_line.h"
 
-int			ft_return_line(char **str, char **line, int fd)
+int				ft_return_line(char **str, char **line, int fd)
 {
-	char	*tmp;
-	int 	i;
+	char		*tmp;
+	int			i;
 
 	i = 0;
 	while (str[fd][i] != '\n' && str[fd][i] != '\0')
@@ -37,10 +37,10 @@ int			ft_return_line(char **str, char **line, int fd)
 	return (1);
 }
 
-int		get_next_line(const int fd, char **line)
+int				get_next_line(const int fd, char **line)
 {
-	static char	*str[255];
-	char 		*tmp;
+	static char	*str[100];
+	char		*tmp;
 	int			status;
 	char		buff[BUFF_SIZE + 1];
 
